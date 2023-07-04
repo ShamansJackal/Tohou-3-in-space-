@@ -1,0 +1,14 @@
+{
+  "projectFileVersion": 2,
+  "sourceFiles": [
+    "**/*.yarn"
+  ],
+  "excludeFiles": [],
+  "localisation": {
+    "ru": {
+      "strings": "${UnityProjectRoot}/Assets/Prefabs/DialogSystem/YarnProject (ru).csv"
+    }
+  },
+  "baseLanguage": "en",
+  "compilerOptions": {}
+}

@@ -1,0 +1,22 @@
+﻿title: TestLevel
+tags: 
+colorID: 0
+position: 827,439
+---
+Sally: Yeah. Don't do it again. #line:d7df49
+<<set_sprite Avatar girlone_happy>>
+Sally: <wave>hello</wave> Yeah. 2 Don't do it again. #line:d7df48
+<<set_sprite Avatar girlone_sad>>
+Sally: Yeah.  4 Don't do it again. #line:d7df47
+===
+
+title: AfterFirstEnemy
+tags: 
+colorID: 0
+position: 820,251
+---
+<<set_sprite Avatar girlone_happy>>
+Sally: First done 100 left.
+Sally: Comic Sans MS (also known by its most common name Comic Sans) is a sans-serif typeface designed by Vincent Connare and released in 1994 by Microsoft Corporation. It is a non-connecting script inspired by comic book lettering, intended for use in cartoon speech bubbles, as well as in other casual environments, such as informal documents and children's materials.
+Sally: Text effects test. [wave waviess=5]Hello[/wave] [bounce]world![/bounce]
+===

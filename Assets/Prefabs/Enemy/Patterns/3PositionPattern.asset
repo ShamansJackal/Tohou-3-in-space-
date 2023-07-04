@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d285eb63c2cdd74180de7cfceaa96ad, type: 3}
+  m_Name: 3PositionPattern
+  m_EditorClassIdentifier: 
+  rootNode:
+    rid: 8232617604161732640
+  nodes:
+  - rid: 8232617604161732640
+  - rid: 8232617604161732641
+  - rid: 8232617604161732642
+  - rid: 8232617604161732645
+  - rid: 8232617604161732647
+  - rid: 8232617604161732648
+  - rid: 8232617604161732649
+  - rid: 8232617604161732650
+  - rid: 8232617604161732651
+  - rid: 8232617604161732653
+  - rid: 8232617604161732654
+  - rid: 8232617604161732655
+  treeState: 0
+  blackboard:
+    keys:
+    - rid: 8232617604161732643
+    - rid: 8232617604161732644
+  viewPosition: {x: 253, y: -1, z: 0}
+  viewScale: {x: 0.49717674, y: 0.49717674, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 8232617604161732640
+      type: {class: RootNode, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: c7e72a66-0e9d-4e8b-89ac-332882b7dc2b
+        position: {x: 0, y: 0}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8232617604161732641
+    - rid: 8232617604161732641
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 90bbef9392b54664bbe21a94df27f5ed
+        position: {x: 0, y: 150}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 8232617604161732642
+        - rid: 8232617604161732645
+    - rid: 8232617604161732642
+      type: {class: MoveToPosition, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 01194397ce965b44281da68d32a17428
+        position: {x: -194.025, y: 346.3325}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        speed:
+          reference:
+            rid: -2
+          defaultValue: 5
+        stoppingDistance:
+          reference:
+            rid: -2
+          defaultValue: 0.1
+        targetPosition:
+          reference:
+            rid: 8232617604161732643
+          defaultValue: {x: 0, y: 0}
+        deltaPosition:
+          reference:
+            rid: -2
+          defaultValue: 1
+    - rid: 8232617604161732643
+      type: {class: Vector2Key, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        name: PositionOne
+        typeName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        value: {x: 0, y: -6}
+    - rid: 8232617604161732644
+      type: {class: Vector2Key, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        name: PositionTwo
+        typeName: UnityEngine.Vector2, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral,
+          PublicKeyToken=null
+        value: {x: 13, y: 0}
+    - rid: 8232617604161732645
+      type: {class: Parallel, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 7b272f365814edb48b41c33241691d69
+        position: {x: 0, y: 345}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 8232617604161732655
+        - rid: 8232617604161732647
+    - rid: 8232617604161732647
+      type: {class: Succeed, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: a73b687a2524770409f203b5c7e7c032
+        position: {x: 120, y: 480}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8232617604161732648
+    - rid: 8232617604161732648
+      type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: cfd3c07c04a837043aded504cf156caa
+        position: {x: 120, y: 600}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8232617604161732649
+        restartOnSuccess: 1
+        restartOnFailure: 0
+        maxRepeats: 0
+    - rid: 8232617604161732649
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 5f39ce47d403ace4f8b618611b1e9428
+        position: {x: 120, y: 720}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 8232617604161732650
+        - rid: 8232617604161732653
+        - rid: 8232617604161732654
+    - rid: 8232617604161732650
+      type: {class: AimDecorator, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 692c3a2a6aa182a4087c4886cbf07bde
+        position: {x: -45, y: 870}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 8232617604161732651
+    - rid: 8232617604161732651
+      type: {class: PressAction, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 54a9c395f774bb84899868cf9ec58ee2
+        position: {x: -45, y: 990}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+    - rid: 8232617604161732653
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 1a36102e678e6274eb5758579d4c9c7c
+        position: {x: 120, y: 870}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        duration: 0.01
+    - rid: 8232617604161732654
+      type: {class: ReleaseAction, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b09e483e94741514497f4ed6536ca56f
+        position: {x: 300, y: 870}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+    - rid: 8232617604161732655
+      type: {class: MoveToPosition, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 87757f0db5aa55c4ebc7a26fcbc989c7
+        position: {x: -105, y: 480}
+        blackboard:
+          keys: []
+        description: 
+        drawGizmos: 0
+        speed:
+          reference:
+            rid: -2
+          defaultValue: 5
+        stoppingDistance:
+          reference:
+            rid: -2
+          defaultValue: 0.1
+        targetPosition:
+          reference:
+            rid: 8232617604161732644
+          defaultValue: {x: 0, y: 0}
+        deltaPosition:
+          reference:
+            rid: -2
+          defaultValue: 1
